@@ -42,7 +42,7 @@
   /* ── BALANCE COUNTER ANIMATION ──────────────────────────── */
   (function animateBalance() {
     const el       = document.getElementById('bal-num');
-    const target   = 13700.00;
+    const target   = 200700.00;
     const duration = 1500;
     let startTime  = null;
 
