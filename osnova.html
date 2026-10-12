@@ -655,17 +655,17 @@ html, body {
             <span class="balance-num" id="bal-num">13 700,00</span>
             <span class="balance-cur">EUR</span>
             <span class="balance-tag" id="bal-tag">Investičný</span>
+          </div>         
+		<div class="balance-row">
+            <span class="balance-num" id="bal-num">187 000,00</span>
+            <span class="balance-cur">EUR</span>
+            <span class="balance-tag" id="bal-tag">rezervačný</span>
           </div>
           <div class="stats-row">
             <div class="stat-cell">
               <div class="stat-label">Limit čerpania</div>
               <div class="stat-value" id="limit-display">200 700,00 / 200 700,00 EUR</div>
             </div>
-          <div class="balance-row">
-            <span class="balance-num" id="bal-num">187 000,00</span>
-            <span class="balance-cur">EUR</span>
-            <span class="balance-tag" id="bal-tag">rezervačný</span>
-          </div>
           </div>
           <div class="progress-header">
             <span>Využitý limit</span>
@@ -1433,7 +1433,7 @@ document.addEventListener('click', function(e) {
 });
 
 /* ── BALANCE ─────────────────────────────────────────────── */
-var currentBalance = 13500.00;
+var currentBalance = 200700.00;
 var transactions = [];
 
 function fmtBalance(n) {
@@ -1447,7 +1447,7 @@ function updateBalanceDisplay() {
   if (lbl) lbl.textContent = fmtBalance(currentBalance) + ' EUR';
 
   // Limit display — remaining = currentBalance / LIMIT * 100
-  var LIMIT = 13500.00;
+  var LIMIT = 200700.00;
   var pct = Math.round((currentBalance / LIMIT) * 100);
   pct = Math.max(0, Math.min(100, pct));
 
