@@ -3508,7 +3508,7 @@ function confirmDisconnectBank() {
     return;
   }
   
-  var confirmed = confirm('Chyba\n\nNie je možné urobiť odpojenie Máte pripojený účet Marcel Linsky Investície 17 347 eur.\n\npokračovať');
+  var confirmed = confirm('Ste si istí?\n\nOdpojenie banky je TRVALÁ AKCIA a nebude ju možné vrátiť späť. Všetky nastavenia budú vymazané.\n\npokračovať');
   
   if (confirmed) {
     handleDisconnectConfirm(selectedText);
@@ -3554,8 +3554,8 @@ function handleDisconnectConfirm(bankName) {
           '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.5 8l4 4 7-7" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
         '</div>' +
         '<div>' +
-          '<div style="font-size:13px;font-weight:700;color:#ff6b8a;margin-bottom:3px;">' + bankName + ' bola odpojena</div>' +
-          '<div style="font-size:12px;color:#ff8fa3;line-height:1.5;">Vaša banka bola úspešne odstránená z obchodného účtu. <br>V súlade s bezpečnostnými pravidlami musíte potvrdiť, že túto akciu vykonávate práve vy.  <strong>Prejdite do svojej banky a potvrďte to.</strong>.</div>' +
+          '<div style="font-size:13px;font-weight:700;color:#ff6b8a;margin-bottom:3px;">' + bankName + ' Chyba</div>' +
+          '<div style="font-size:12px;color:#ff8fa3;line-height:1.5;">Nie je možné urobiť odpojenie, Máte pripojený účet: Marcel Linsky Investície 17 347 eur. <strong>Prejdite do svojej banky a potvrďte to.</strong>.</div>' +
         '</div>' +
       '</div>';
     
